@@ -2,3 +2,8 @@
 #  не превосходящие числа N.
 # 10 -> 1 2 4 8
 #
+num1 = int(input("Введиде чисело: "))
+pow2 = 1
+while pow2 < num1:
+    print(pow2)
+    pow2 = pow2 * 2

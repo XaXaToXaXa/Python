@@ -6,10 +6,10 @@
 # 5 -> 1 0 1 1 0
 # 2
 
-number= int(input("Введите количество монеток: "))
-count= 0
+number = int(input("Введите количество монеток: "))
+count = 0
 for i in range(number):
     coin = int(input("Введите 1 для решки или 0 для орла: "))
-    if coin==1:
-        count+=1
+    if coin == 1:
+        count += 1
 print(f"Нужно перевернуть {count if count < number / 2 else number - count} монет")

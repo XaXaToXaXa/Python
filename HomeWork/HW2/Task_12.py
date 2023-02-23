@@ -10,8 +10,8 @@
 
 num1 = int(input("Введиде произведение чисел: "))
 num2 = int(input("Введиде сумму чисел: "))
-res = []
-for i in range(num1 + num2):
-    if i == (num1 * i - num2) ** 0.5:
-        res.append(i)
-print(*res if len(res) == 2 else res + res)
+
+for i in range(num1):
+    for j in range(num2):
+        if num1 == i * j and num2 == i + j:
+            print(i, j)
