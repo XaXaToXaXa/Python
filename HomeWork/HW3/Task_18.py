@@ -20,7 +20,6 @@ def fill_list(size):
 # Рандом
 import random
 
-
 def fill_list(size):
     new_list = []
     for i in range(size):

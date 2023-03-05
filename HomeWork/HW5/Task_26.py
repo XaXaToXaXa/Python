@@ -12,8 +12,7 @@ def sqar(a, b):
     if b == 1:
         return a
     else:
-        b -= 1
-        a = a * sqar(a, b)
+        a = a * sqar(a, b-1)
     return a
 
 print(sqar(a,b))
