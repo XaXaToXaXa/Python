@@ -5,3 +5,15 @@
 # 5
 # 15
 # Вывод: [1, 9, 13, 14, 19]
+
+def range_serch(lst, a, b):
+    result = []
+    for i in range(len(lst)):
+        if a <= lst[i] <= b:
+            result.append(i)
+    return result
+input_list = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7] #list(map(int, input("Введите цифры через пробел: ").split()))
+min_num = 5 #int(input("Введите минимальное значение диапазона: "))
+max_num = 15 #int(input("Введите максимальное значение диапазона: "))
+
+print(f"Индексы элементов в принадлежащих заданному диапазону: {range_serch(input_list, min_num, max_num)}")
