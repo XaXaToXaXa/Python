@@ -11,3 +11,14 @@
 
 # **Ввод:** пара-ра-рам рам-пам-папам па-ра-па-да    
 #     **Вывод:** Парам пам-пам  
+
+def ritm_check(input_text):
+    input_string = input_text.lower().split()
+    check = lambda x: sum(1 for i in x if i in 'аоуыэеёиюя')
+    tmp = check(input_string[0])
+    if all([check(i) == tmp for i in input_string]):
+        return 'Парам пам-пам'
+    return 'Пам парам'
+
+text_input = input("Введи часть стиха Пух: ") #"пара-ра-рам рам-пам-папам па-ра-па-дам"
+print(ritm_check(text_input))

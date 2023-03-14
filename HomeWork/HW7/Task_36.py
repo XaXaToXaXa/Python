@@ -16,3 +16,14 @@
 # 4 8 12 16 20 24
 # 5 10 15 20 25 30
 # 6 12 18 24 30 36
+
+def print_operation_table(operation, num_rows=6, num_columns=6):
+    for i in range(1, num_rows +1):                         # От 1 чтобы убрать строку с 0
+        sum = []
+        for j in range(1, num_columns +1):                  # От 1 чтобы убрать стобец с 0
+            sum.append(str(operation(i, j)))                # для вывода без скобок
+          # sum.append(int(operation(i, j)))                # для вывода массива
+        #print(f"{sum}")
+        print("  " .join(sum))
+
+print_operation_table(lambda x, y: x * y)                   # Если поставить вычетание получится кравивая картинка
