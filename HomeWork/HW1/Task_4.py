@@ -13,4 +13,4 @@
 inputNumber = int(input("Введите количество сделанных журавликов: "))
 # boys = (inputNumber//3)/2
 # girl = (inputNumber//3)*2
-print(f"Из {inputNumber} сделаных журавликов, Катя сделала {(inputNumber//3)*2}, а мальчики по {(inputNumber//3)//2}")
+print(f"Из {inputNumber} сделаных журавликов, Катя сделала {(inputNumber//3)*2}, а мальчики по {inputNumber//6}")
