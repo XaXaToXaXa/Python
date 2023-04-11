@@ -18,3 +18,12 @@ if half1 == half2:
     print("Lucky")
 else:
     print("Trash")
+
+secondHalf1 = int(inputNumber) // 1000
+secondHalf2 = int(inputNumber) % 1000
+secondHalf1 = secondHalf1 // 100 + secondHalf1 // 10 % 10 + secondHalf1 % 10
+secondHalf2 = secondHalf2 // 100 + secondHalf2 // 10 % 10 + secondHalf2 % 10
+if secondHalf1 == secondHalf2:
+    print("Lucky")
+else:
+    print("Trash")
