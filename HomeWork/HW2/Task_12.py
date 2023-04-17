@@ -14,4 +14,4 @@ num2 = int(input("Введиде сумму чисел: "))
 for i in range(num1):
     for j in range(num2):
         if num1 == i * j and num2 == i + j:
-            print(i, j)
+            print(f"Петя загадал: {i} и {j}")

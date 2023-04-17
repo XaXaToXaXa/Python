@@ -50,19 +50,19 @@ m = 750
 год является високосным, если его номер кратен 4,
 но не кратен 100, а также если он кратен 400.
 """
-# year = int(input("Введите год: "))
+year = int(input("Введите год: "))
 
-# if year % 400 == 0:
-#     print("Yes")
+if year % 400 == 0:
+    print("Yes")
+elif (year % 4 == 0) and (year % 100 != 0):
+    print("Yes")
+else:
+    print("No")
 
-# elif year % 4 == 0 and year % 100 != 0:
-#     print("Yes")
-
-# else:
-#     print("No")
-
-
-# if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
-#     print('YES!')
-# else: 
-#     print('NO!')
+if (year % 4 == 0) and (year % 100 != 0) or (year % 400 == 0):
+    print('YES!')
+else: 
+    print('NO!')
+    
+res = 'Yes' if ((year%4==0) and (year%100!=0)) or (year%400==0) else 'No'
+print(res)

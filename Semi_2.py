@@ -24,18 +24,15 @@
 # innumber = int(input("Введите число: "))
 # numberFibo1 = 0
 # numberFibo2 = 1
-# fibo = 0
 # count = 2
-# while (fibo < number):
-#     fibo = numberFibo1+numberFibo2
-#     numberFibo1 = numberFibo2
-#     numberFibo2 = fibo
+# while (numberFibo2 < innumber):
+#     numberFibo1, numberFibo2 = numberFibo2, numberFibo1 + numberFibo2
 #     count += 1
-# if (fibo == number):
+# if (numberFibo2 == innumber):
 #     print(count)
 # else:
 #     print("-1")
-#
+
 #
 # Уставшие от необычно теплой зимы, жители решили узнать,
 # действительно ли это самая длинная оттепель за всю историю наблюдений за погодой.
@@ -52,21 +49,21 @@
 # Input:    6 -> -20 30 -40 50 10 -10
 # Output: 2
 #
-# n = int(input())
-# s = list(input().split(' '))
-# j = 0
-# k = 0
-# for i in range(n):
-#     a = int(s[i])
+# day = int(input("Введите количество дней: "))
+# tempature = list(input("Введите температуры через пробел: ").split(' '))
+# countDays = 0
+# finalDays = 0
+# for i in range(day):
+#     a = int(tempature[i])
 #     if a > 0:
-#         j = j + 1
+#        countDays += 1
 #     else:
-#         j = 0
-#     if j > k:
-#         k = j
-# print(k)
-#
-# 15. Иван Васильевич пришел на рынок и решил купить два арбуза: один для себя, а другой для тещи.
+#        countDays = 0
+#     if countDays > finalDays:
+#        finalDays = countDays
+# print(f"Самая длинная оттепель: {finalDays}")
+
+# # 15. Иван Васильевич пришел на рынок и решил купить два арбуза: один для себя, а другой для тещи.
 # Понятно, что для себя нужно выбрать арбуз потяжелей, а для тещи полегче.
 # Но вот незадача: арбузов слишком много и он не знает как же выбрать самый легкий и самый тяжелый арбуз?
 # Помогите ему!
@@ -75,16 +72,25 @@
 # Здесь каждое число – это масса соответствующего арбуза
 # Input:	5 -> 5 1 6 5 9
 # Output:	1 9
-# def task(ws):
-#     mi, ma = ws[0], ws[0]
-#     for w in ws:
-#         if w > ma:
-#             ma = w
-#         if w < mi:
-#             mi = w
-#     return (ma, mi)
-#
-#
-# input()  # пропускаем N
-# ws = list(map(int, input().split(" ")))
-# print(task(ws))
+# size = int(input("Введите количество арбузов: "))
+# melonsAmount = list(map(int, input("Введите вес каждого арбуза через пробел: ").split(" ")))
+# minWeight, maxWeight = melonsAmount[0], melonsAmount[0]
+# for i in melonsAmount:
+#     if i > maxWeight:
+#          maxWeight = i
+#     if i < minWeight:
+#         minWeight = i
+# print(minWeight, maxWeight)
+
+# count_wat = int(input('--> '))
+
+# min_wat = int(input('water_1: '))
+# max_wat = min_wat
+
+# for i in range(count_wat - 1):
+#     wat = int(input(f'water_{i + 2}: '))
+#     if wat > max_wat:
+#         max_wat = wat
+#     elif wat < min_wat:
+#         min_wat = wat
+# print(min_wat, max_wat)

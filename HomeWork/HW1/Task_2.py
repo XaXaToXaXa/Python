@@ -8,4 +8,3 @@
 inputNumber = int(input("Введите трехзначное число: "))
 
 print(f"Сумма цифр в числе {inputNumber} = {(inputNumber // 100) + (inputNumber // 10 % 10) + (inputNumber % 10)}")
-
