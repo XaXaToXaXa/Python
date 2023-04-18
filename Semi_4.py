@@ -61,13 +61,14 @@ print(len(set(input_text.split())))
 # будет меньше ошибок в коде, тот и выиграл спор. За
 # помощью товарищи обратились к Вам, студентам.
 
-input_number = int(input("Введите целое положитльное число: "))
+"""
 input_list = []
-while input_number != 0:
+while (input_number := int(input("Введите целое положитльное число: "))) != 0:
     input_list.append(input_number)
     input_number = int(input("Введите целое положитльное число: "))
 print(f"Максимальное число из указаных: {max(input_list)}") 
-
+# := моржовый оператор позваляет задать данные
+"""
 # Ex 1 output 0
 # n = int(input())
 # max_number = 1000
