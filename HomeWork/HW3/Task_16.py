@@ -23,12 +23,9 @@ print(f"В массиве :{num_list} число: {find_num} встречает�
 #Вариант с рандомным массивом.
 
 import random
-list_size = int(input("Введите размер массива: "))
+list_size = int(input("Введите размер списка: "))
 find_num = int(input("Введите искомое значение: "))
-num_list = [1,]
-count = 0
+num_list = []
 for i in range(list_size):
-    num_list.append(random.randint(1, 20))
-    if find_num == num_list[i]:
-        count = count+1
-print(f"В массиве :{num_list} число: {find_num} встречается: {count} раз.")
+    num_list.append(random.randint(1, 5))
+print(f"В списке :{num_list} число: {find_num} встречается: {num_list.count(find_num)} раз.")
