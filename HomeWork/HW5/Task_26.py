@@ -5,8 +5,8 @@
 # A = 3; B = 5 -> 243 (3⁵)
 #     A = 2; B = 3 -> 8
 
-a = int(input("Введите число A: "))
-b = int(input("Введите степень числа А: "))
+# a = int(input("Введите число A: "))
+# b = int(input("Введите степень числа А: "))
 
 def sqar(a, b):
     if b == 1:
@@ -15,4 +15,4 @@ def sqar(a, b):
         a = a * sqar(a, b-1)
     return a
 
-print(sqar(a,b))
+print(sqar(a := int(input("Введите число A: ")),b := int(input("Введите степень числа А: "))))
