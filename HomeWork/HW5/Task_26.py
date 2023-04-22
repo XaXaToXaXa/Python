@@ -14,5 +14,5 @@ def sqar(a, b):
     else:
         a = a * sqar(a, b-1)
     return a
+print(a:=int(input('Введите число A: ')), "**", b := int(input('Введите степень числа А: ')), "=",  sqar(a, b))
 
-print(sqar(a := int(input("Введите число A: ")),b := int(input("Введите степень числа А: "))))
